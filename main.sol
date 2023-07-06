@@ -23,7 +23,8 @@ contract EventContract {
    require(ticketCount>0,"You can organize event only if you create more than 0 tickets");
 
 
-   
+   events[nextId] = Event(msg.sender,name,date,price,ticketCount,ticketCount);
+   nextId++;
  }
 
 
