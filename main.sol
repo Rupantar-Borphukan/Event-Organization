@@ -3,7 +3,7 @@ pragma solidity >=0.5.0 <0.9.0;
 
 contract EventContract {
  struct Event{
-   address organizer;
+   address organizer
    string name;
    uint date; //0 1 2
    uint price;
