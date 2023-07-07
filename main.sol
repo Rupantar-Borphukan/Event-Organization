@@ -7,7 +7,7 @@ contract EventContract {
    string name;
    uint date; 
    uint price;
-   uint ticketCount;  //1 sec  0.5 sec
+   uint ticketCount;  
    uint ticketRemain;
  }
 
