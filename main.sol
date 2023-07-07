@@ -5,7 +5,7 @@ contract EventContract {
  struct Event{
    address organizer;
    string name;
-   uint date; //0 1 2
+   uint date; 
    uint price;
    uint ticketCount;  //1 sec  0.5 sec
    uint ticketRemain;
