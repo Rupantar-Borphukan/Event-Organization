@@ -13,7 +13,9 @@ contract EventContract {
 
 
  mapping(uint=>Event) public events;
+
  mapping(address=>mapping(uint=>uint)) public tickets;
+
  uint public nextId;
  
 
@@ -36,8 +38,6 @@ contract EventContract {
    require(_event.ticketRemain>=quantity,"Not enough tickets");
    _event.ticketRemain-=quantity;
    tickets[msg.sender][id]+=quantity;
-
-
  }
 
 
